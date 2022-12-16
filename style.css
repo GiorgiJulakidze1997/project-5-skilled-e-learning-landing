@@ -4,6 +4,10 @@
     margin: 0;
 } 
 
+a {
+    text-decoration: none;
+}
+
 .hero-img-desktop {
     display: none;
 }
@@ -21,6 +25,10 @@
     font-family: "Plus Jakarta Sans", sans-serif;
     font-weight: 800;
     
+}
+
+.margin-top-25 {
+    margin-top: 25px;
 }
 .typography-size-skilled {
     font-size: 28px;
@@ -58,7 +66,7 @@
 
 .get-started-box{
     height: 48px;
-    width: 140px;
+    max-width: 140px;
     left: 0px;
     top: 0px;
     border-radius: 28px;
@@ -131,7 +139,7 @@
 
 .hero-img-mobile {
     height: 323px;
-    width: 343px;
+    max-width: 343px;
 }
 .middle-box {
     padding-bottom: 80px;
@@ -242,7 +250,7 @@
         position: relative;
         top: -511px;
         right: -290px;
-        width: 585px;
+        max-width: 585px;
         height: 515px;
     }
 
@@ -253,35 +261,40 @@
 
     .info-box {
         overflow: hidden;
+        padding-top: 69px;
+    }
+    .main-div {
+        background-color: inherit;
+    }
+    a {
+        text-decoration: none;
     }
 
-
     body {
-        overflow-x: hidden;
-        /* overflow: hidden; */
-        /* background-image: url("./images/image-hero-desktop.png");
-        background-size: 680px;
+        
+        background-image: url("./images/image-hero-desktop.png");
+        background-size: 600px;
         background-repeat: no-repeat;
-        background-position: right -270px top -70px; */
-        /* background-color: white; */
+        background-position: right -270px top -40px; 
+         /* background-color: white; */
     }
 
     .middle-box {
-        margin-top: -445px;
+         /* margin-top: -445px;  */
         flex-flow: row wrap;
         padding-left: 20px;
         gap: 20px;
     }
 
     .choices-box {
-        width: 300px;
+        max-width: 300px;
         height: 300px;
         margin-top: 20px;
         padding-top: 55px;
     }
 
     .mini-box {
-        width: 300px;
+        max-width: 300px;
         height: 259px;
         margin-top: 20px;
     }
@@ -298,15 +311,22 @@
 
 
 @media screen and (min-width: 1350px) {
-    .main-div {
-        padding-left: 100px;
-        padding-right: 100px;
-        background-color: white;
+    body {
+        
+        background-image: url("./images/image-hero-desktop.png");
+        background-size: 800px;
+        background-repeat: no-repeat;
+        background-position: right -250px top -30px; 
+         /* background-color: white; */
     }
 
-    body {
-        background-color: white;
+    .main-div {
+        padding-left: 150px;
+        padding-right: 100px;
+        /* background-color: white; */
     }
+
+
 
     .get-started-box {
         width: 167px;
@@ -318,7 +338,7 @@
     }
 
     .tablet-info-box-1 {
-        width: 418px;
+        max-width: 418px;
         padding-top: 30px;
     }
 
@@ -327,7 +347,7 @@
         position: relative;
         top: -561px;
         right: -410px;
-        width: 691px;
+        max-width: 691px;
         height: 678px;
     }
 
@@ -338,7 +358,8 @@
 
     .middle-box {
         gap: 50px;
-        padding-left: 111px;
+        padding-left: 61px;
+        margin-top: 128px;
     }
 
     .desktop-padding {
